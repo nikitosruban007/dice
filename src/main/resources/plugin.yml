@@ -1,0 +1,6 @@
+name: Dice
+version: '${project.version}'
+main: dice.dice.Dice
+api-version: '1.20'
+commands:
+  dice: {}

@@ -1,0 +1,37 @@
+###################
+#   Dice Config   #
+#    By: P.J.     #
+###################
+
+#num1-6 this is random numbers for /dice 1-3
+dicenum:
+  num1: '1'
+  num2: '2'
+  num3: '3'
+  num4: '4'
+  num5: '5'
+  num6: '6'
+
+#Message receiving radius
+radius: 15
+
+#You can turn off cooldown or change duration, and you can change wait message.
+cooldown:
+  enabled: true
+  duration: 5
+  wait: 'Please wait a couple of seconds'
+
+#Custom text for that when player rolling dice (%player% = *nickname, %get% = get:, %sn% = second random number, %fn% = first random number, %tn% = third random number)
+#Message type can be any. Example '%player% %get% %fn% abc', '%player% want: %fn%', and so on.
+#for all player in radius
+texts:
+  text: '%player% %get% %fn%' #for /dice 1
+  text2: '%player% %get% %fn% %sn%' #for /dice 2
+  text3: '%player% %get% %fn% %sn% %tn%' #for /dice 3
+  #for sender
+  s_text: '%you% %get% %fn%' #for /dice 1
+  s_text2: '%you% %get% %fn% %sn%' #for /dice 2
+  s_text3: '%you% %get% %fn% %sn% %tn%' #for /dice 3
+
+
+
